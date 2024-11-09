@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="myForm" onsubmit="return validateForm()">
+            <h2>Contactez-nous</h2>
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</head>
+<body bgcolor="beige">
+<form>
+<legend>Fiche d'inscription</legend>
+<fieldset>
+<p>Nom et Prenom <input type="text id" name="nom" placeholder="Taper nom" required></p>
+<p>Ville <select>>
+<option>Tunis</option>
+<option>Ariana</option>
+<option>Manouba</option>
+</select></p>
+<p>Sexe :<input type="radio" name="Sexe">H
+<input type="radio" name="Sexe">F</p>
+<p>paiement: <input type="checkbox" name="es">
+Espéce<input type="checkbox" name="CH">Chéque</p>
+<p>Mot de passe: <input type="password" id="mp" required>
+</p>
+<p> Date de naissance <input type="Date" id="Dt"></p>
+<p> Heure <input type="time" id="hr"></p>
+<input type="submit" value="Envoier">
+<input type="reset" value="Annuler">
+</p>
+</fieldset>
+</body>
+</html>
